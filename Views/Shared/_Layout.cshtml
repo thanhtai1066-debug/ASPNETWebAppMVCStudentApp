@@ -23,6 +23,14 @@
                 </ul>
             </div>
         </div>
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Departments", "Index", "tblDepartments")</li>
+                <li>@Html.ActionLink("Instructors", "Index", "tblInstructors")</li>
+                <li>@Html.ActionLink("Courses", "Index", "tblCourses")</li>
+                <li>@Html.ActionLink("Students", "Index", "tblStudents")</li>
+            </ul>
+        </nav>
     </nav>
     <div class="container body-content">
         @RenderBody()
@@ -31,7 +39,6 @@
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
